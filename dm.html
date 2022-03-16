@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        /*img{}*/
+        a{
+            color: #000;
+            border-bottom:none;
+        }
+        a:hover{
+            color: #f00;
+        }
+        #menu{
+            width: 100px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        #menu ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        #menu ul li{
+            background:blanchedalmond;
+            color: #fff;
+            padding: 0px 10px;
+            height: 25px;
+            line-height: 25px;
+            border-bottom: 1px solid #ccc;
+            position: relative;
+        }
+        #menu ul li ul{
+            display: none;
+            position: absolute;
+            left: 100px;
+            top: 0px;
+            width: 100px;
+            border: 1px solid #ccc;
+            border-bottom: none;
+        }
+        #menu ul li ul li{
+            background-color: rgba(100,50, 100, 0.25);
+        }
+        #menu ul li ul li ul li{
+            display:none;
+        }
+        #menu ul li:hover{
+            background-color:aqua;
+            transition: 2s;
+        }
+        #menu ul li:hover ul{
+            display: block;
+            transition: 3s;
+        }
+        #menu ul li ul :hover li{
+            display: block;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+    <h1>LIU xuanshuo 20210030</h1>
+    <hr></header>
+    <div id="menu">
+        <ul>
+            <li>
+                <a href="">menu1</a>
+                    <ul>
+                        <li>
+                            <a href="#">menu1.1</a>
+                            <ul>
+                                <li>
+                                    <a href="#">menu1.1.1</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">menu1.2</a>
+                        </li>
+                    </ul>
+            </li>
+            <li>
+                <a href="">menu2</a>
+                     <ul>
+                        <li>
+                            <a href="#">menu2.1</a>
+                        </li>
+                        <li>
+                            <a href="#">menu2.2</a>
+                        </li>
+                    </ul>
+            </li>
+            <li>
+                <a href="">menu3</a>
+                     <ul>
+                        <li>
+                            <a href="#">menu3.1</a>
+                        </li>
+                        <li>
+                            <a href="#">menu3.2</a>
+                        </li>
+                        <li>
+                            <a href="#">menu3.3</a>
+                        </li>
+                    </ul>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
